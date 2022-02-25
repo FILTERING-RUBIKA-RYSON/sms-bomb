@@ -1,6 +1,7 @@
 import os
 import time
 import requests
+import sys
 from threading import Thread
 from colorama import Fore
 from time import sleep
@@ -10,7 +11,7 @@ print(Fore.RED)
 print(""" sMs bOmBeR God """)
 sleep(2)
 print(Fore.GREEN)
-print("""
+s = """
 ▄▄▄▄▄▄   ▄▄▄    ▄▄▄   ▄▄▄▄      ▄▄▄▄    ▄▄▄   ▄▄
  ██▀▀▀▀██  ██▄  ▄██  ▄█▀▀▀▀█    ██▀▀██   ███   ██                                        ██    ██   ██▄▄██   ██▄       ██    ██  ██▀█  ██
  ███████     ▀██▀     ▀████▄   ██    ██  ██ ██ ██
@@ -28,7 +29,12 @@ creator-rayson.blogfa.com
 Script the mmd ryson
      
      SmS bOmBeR
-""")
+"""
+for t in s:
+    sys.stdout.write(t)
+    sys.stdout.flush()
+    time.sleep(0.01)
+
 
 def snap(phone):
     #snap api
