@@ -23,9 +23,7 @@ My Id:
 T.me/Creator_ryson
 T.Me/Uupdatte
 rubika.ir/Caetorr
-rubika.ir/Spansor
-rubika.ir/Conquest_rayson
-Law-ryson.Blogfa.Com
+creator-rayson.blogfa.com
 
 Script the mmd ryson
      
