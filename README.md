@@ -1,4 +1,8 @@
-# sms-bomb
+# sms-bomber
+
+______________
+a great and powerful spammer 
+______________
 
 # api ها قدیمی هستند و به دلیل استفاده زیاد شاید دیگه جواب نده
 # storng sms bomber
