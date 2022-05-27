@@ -14,6 +14,10 @@ try:
     import colored
 except:
     system ('pip install colored')
+try:
+    from datetime import datetime
+except:
+    system ('pip install datetime')
 # !
 import time
 import requests
@@ -40,19 +44,22 @@ white="\033[00m"
 
 print(f"{blue}\n\n\n\n\nsMs bOmBeR God\n")
 sleep(2)
+try:
+    tm = get("https://api.codebazan.ir/time-date/?td=all").text
+except:
+    tm = (datetime.today())
 
-tm = ''
-
-
-s = f"""{pink}
-▄▄▄▄▄▄   ▄▄▄    ▄▄▄   ▄▄▄▄      ▄▄▄▄    ▄▄▄   ▄▄
+s = f"""\n
+  {darkblue}date: {blue}[ {tm} ]
+{pink}
+ ▄▄▄▄▄▄   ▄▄▄    ▄▄▄   ▄▄▄▄      ▄▄▄▄     ▄▄▄   ▄▄
  ██▀▀▀▀██  ██▄  ▄██  ▄█▀▀▀▀█    ██▀▀██   ███   ██                                        ██    ██   ██▄▄██   ██▄       ██    ██  ██▀█  ██
- ███████     ▀██▀     ▀████▄   ██    ██  ██ ██ ██
- ██  ▀██▄     ██          ▀██  ██    ██  ██  █▄██
- ██    ██     ██     █▄▄▄▄▄█▀   ██▄▄██   ██   ███
- ▀▀    ▀▀▀    ▀▀      ▀▀▀▀▀      ▀▀▀▀    ▀▀   ▀▀▀
+ ███████     ▀██▀     ▀████▄    ██    ██  ██ ██ ██
+ ██  ▀██▄     ██          ▀██    ██    ██  ██  █▄██
+ ██    ██     ██     █▄▄▄▄▄█▀    ██▄▄██   ██   ███
+ ▀▀    ▀▀▀    ▀▀      ▀▀▀▀▀       ▀▀▀▀     ▀▀   ▀▀▀
 
-
+{green}
 |t.me/creator_ryson|t.me/uupdatte            |
 |rubika.ir/caetorr |creator-rayson.blogfa.com|\n\n
 {yellow}<SMS SENDER> ~ [M.D RYSON]
