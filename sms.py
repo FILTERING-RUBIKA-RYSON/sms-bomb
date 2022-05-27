@@ -10,8 +10,9 @@ os.system("clear")
 print(Fore.RED)
 print(""" sMs bOmBeR God """)
 sleep(2)
+yellow="\033[93m"
 print(Fore.GREEN)
-s = """
+s = f"""
 ▄▄▄▄▄▄   ▄▄▄    ▄▄▄   ▄▄▄▄      ▄▄▄▄    ▄▄▄   ▄▄
  ██▀▀▀▀██  ██▄  ▄██  ▄█▀▀▀▀█    ██▀▀██   ███   ██                                        ██    ██   ██▄▄██   ██▄       ██    ██  ██▀█  ██
  ███████     ▀██▀     ▀████▄   ██    ██  ██ ██ ██
@@ -19,16 +20,10 @@ s = """
  ██    ██     ██     █▄▄▄▄▄█▀   ██▄▄██   ██   ███
  ▀▀    ▀▀▀    ▀▀      ▀▀▀▀▀      ▀▀▀▀    ▀▀   ▀▀▀
 
-My Id:
 
-T.me/Creator_ryson
-T.Me/Uupdatte
-rubika.ir/Caetorr
-creator-rayson.blogfa.com
-
-Script the mmd ryson
-     
-     SmS bOmBeR
+T.me/Creator_ryson | T.Me/Uupdatte
+rubika.ir/Caetorr  | creator-rayson.blogfa.com
+{yellow}SMS SENDER [M.D RYSON]
 """
 for t in s:
     sys.stdout.write(t)
