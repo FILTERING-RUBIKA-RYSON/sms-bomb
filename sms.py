@@ -50,7 +50,7 @@ except:
     tm = (datetime.today())
 
 s = f"""\n
-  {darkblue}date: {blue}[ {tm} ]
+  {yellow}⟨⟨⟨ {darkblue}date: {blue}[ {tm} ] {yellow}⟩⟩⟩
 {pink}
  ▄▄▄▄▄▄   ▄▄▄    ▄▄▄   ▄▄▄▄      ▄▄▄▄     ▄▄▄   ▄▄
  ██▀▀▀▀██  ██▄  ▄██  ▄█▀▀▀▀█    ██▀▀██   ███   ██                                        ██    ██   ██▄▄██   ██▄       ██    ██  ██▀█  ██
@@ -62,7 +62,7 @@ s = f"""\n
 {green}
 |t.me/creator_ryson|t.me/uupdatte            |
 |rubika.ir/caetorr |creator-rayson.blogfa.com|\n\n
-{yellow}<SMS SENDER> ~ [M.D RYSON]
+{yellow}<SMS SENDER> ~ [M.D RYSON]\n\n
 """
 for t in s:
     sys.stdout.write(t)
