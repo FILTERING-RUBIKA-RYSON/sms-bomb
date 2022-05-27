@@ -1,4 +1,4 @@
-
+#python; running script on: python3 , linux , windows
 # imports ------
 from os import system
 # try !
@@ -49,8 +49,8 @@ try:
 except:
     tm = (datetime.today())
 
-s = f"""\n
-  {yellow}⟨⟨⟨ {darkblue}date: {blue}\n[ {tm} ] {yellow}⟩⟩⟩
+s = f"""{white}|POWER BOMBER|\n\n
+  {yellow}⟨⟨⟨ {darkblue}date: {blue}(( {tm} )) {yellow}⟩⟩⟩
 {pink}
  ____   __   __  ____     ___    _   _
 |  _ \  \ \ / / / ___|   / _ \  | \ | |
