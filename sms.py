@@ -52,17 +52,16 @@ except:
 s = f"""\n
   {yellow}⟨⟨⟨ {darkblue}date: {blue}\n[ {tm} ] {yellow}⟩⟩⟩
 {pink}
- ▄▄▄▄▄▄   ▄▄▄    ▄▄▄   ▄▄▄▄     ▄▄▄▄    ▄▄▄   ▄▄
- ██▀▀▀▀██  █▄  ▄██  ▄█▀▀▀▀█   ██▀▀██  ███   ██                                        ██    ██   ██▄▄██   ██▄       ██    ██  ██▀█  ██
- ███████    ▀██▀     ▀████▄    ██    ██ ██ ██ ██
- ██  ▀██▄    ██          ▀██    ██    ██ ██  █▄██
- ██    ██    ██     █▄▄▄▄▄█▀    ██▄▄██  ██   ███
- ▀▀    ▀▀▀   ▀▀      ▀▀▀▀▀       ▀▀▀▀    ▀▀   ▀▀▀
+ ____   __   __  ____     ___    _   _
+|  _ \  \ \ / / / ___|   / _ \  | \ | |
+| |_) |  \ V /  \___ \  | | | | |  \| |
+|  _ <    | |    ___) | | |_| | | |\  |
+|_| \_\   |_|   |____/   \___/  |_| \_|
 
 {green}
 |t.me/creator_ryson|t.me/uupdatte            |
 |rubika.ir/caetorr |creator-rayson.blogfa.com|\n\n
-{yellow}<SMS SENDER> ~ [M.D RYSON]\n\n
+{yellow}<SMS SENDER> ~ [M.D RYSON] FROM [ASHIANEH]\n\n
 """
 for t in s:
     sys.stdout.write(t)
